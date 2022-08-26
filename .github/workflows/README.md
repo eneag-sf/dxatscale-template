@@ -1,6 +1,6 @@
 ![image](https://gblobscdn.gitbook.com/assets%2F-MI39dIf1BuKlg_oSIG_%2F-MersLlsLMydZ6V7hfP-%2F-MersUtb9fBk1m9NMuMc%2Fflowdiagram_revised.png?alt=media&token=b613b0a8-99e3-4702-8f38-033cb1d7700d)
 
-This repo contains the follwing YAML based Azure Pipeline defintions
+This repo contains the follwing YAML based GitHub Pipeline definitions.
 
 -  validate.yml
    Pull Request Validation Pipeline, that validates incoming changes against a scratch org fetched from the pool
@@ -14,10 +14,10 @@ This repo contains the follwing YAML based Azure Pipeline defintions
 
 
 - env-operations
-  - prepare-ci-poool.yml
+  - prepare-ci-pool.yml
      Pipeline to prepare command is used to build scratch org pools for CI purposes
 
-  - prepare-dev-poool.yml
+  - prepare-dev-pool.yml
      Pipeline to prepare command is used to build scratch org pools for development
    
   - pool-cleaner.yml
@@ -27,7 +27,7 @@ This repo contains the follwing YAML based Azure Pipeline defintions
      Delete a particular scratch org fetched from the pool, to be used where the devs dont have access to delete scratch orgs from command line (Free Developer License) 
 
 
-The sample pipelines utilise an azure pipelines variable group called DEVHUB which contains the following variables. As a prerequisite, this has to be setup manually
+The sample pipelines utilize an azure pipelines variable group called DEVHUB which contains the following variables. As a prerequisite, this has to be setup manually
 - DEVHUB_SFDX_AUTH_URL   : The auth url to DevHub, You can retrieve the auth URL by following the ling here https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_auth_sfdxurl.htm
 
 - DEV_SFDX_AUTH_URL: The auth url to Developer Sandbox, You can retrieve the auth URL by following the ling here https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_auth_sfdxurl.htm

@@ -3,7 +3,7 @@
 
 **Intro:**
 
-This repo contains the follwing YAML based Azure Pipeline defintions
+This repo contains the follwing YAML based Azure Pipeline definitions.
 
 -  validate.yml
    Pull Request Validation Pipeline, that validates incoming changes against a scratch org fetched from the pool
@@ -63,5 +63,3 @@ This repo contains the follwing YAML based Azure Pipeline defintions
    - UAT_SFDX_AUTH_URL: The auth url to SIT Sandbox, You can retrieve the auth URL by following the ling here https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_auth_sfdxurl.htm
  
    -  scope : Scope for the packages to be published to the repository 
-
-
