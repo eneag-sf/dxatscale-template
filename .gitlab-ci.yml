@@ -21,10 +21,10 @@
 # See https://docs.gitlab.com/ee/ci/yaml/README.html for all available options    
 # 
 #------------------------------------------------------------------------------------------------------------
-# To know more on dxatscale, visit https://docs.dxatscale.io
-# To know more on sfpowerscripts, visit https://sfpowerscripts.dxatscale.io/
-# To know more on sfpowerkit, visit https://github.com/Accenture/sfpowerkit
-# To know more on Dockerfile, visit  https://github.com/Accenture/sfpowerscripts/blob/main/dockerfiles
+# To know more on dxatscale, visit https://www.dxatscale.io/
+# To know more on sfpowerscripts, visit https://docs.dxatscale.io/sfpowerscripts/sfpowerscripts
+# To know more on sfpowerkit, visit https://github.com/dxatscale/sfpowerkit
+# To know more on Dockerfile, visit https://github.com/dxatscale/sfpowerscripts/tree/main/dockerfiles
 
 # Configure the following CI/CD environment variables and/or file prior to running the pipleine
 #------------------------------------------------------------------------------------------------------------
@@ -174,7 +174,7 @@ validate-source:
 
 ## 2. This pipeline quickbuilds, deploy to QA, builds and publishes packages to artifact repository
 
-# Build packages (unlocked/source/data) in a repo in parallel, without validating depenencies or coverage in the case of unlocked packages 
+# Build packages (unlocked/source/data) in a repo in parallel, without validating dependencies or coverage in the case of unlocked packages 
 quickbuild: 
   extends: .run-only-on-merge
   stage: quickbuild 
