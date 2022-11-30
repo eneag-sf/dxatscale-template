@@ -6,5 +6,6 @@ artifacts:
   #src-ui: LATEST_TAG
   #src-access-management: LATEST_TAG
   #src-env-specific-alias-post: LATEST_TAG
+promotePackagesBeforeDeploymentToOrg: "SIT"  
 changelog:
   workItemFilter: "issues/[0-9]+"
