@@ -105,7 +105,7 @@ stages:
       when: never      
     - if: '$TARGETTASKNAME == "manual-release"'  
       when: never           
-    - if: '($CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH=~ /^release*$/)' 
+    - if: '($CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH =~ /^(release)\/[a-z0-9.]+$/)' 
       when: on_success               
     - when: never
 
@@ -118,7 +118,7 @@ stages:
       when: never     
     - if: '$TARGETTASKNAME == "manual-delete-fetched-so"'  
       when: never     
-    - if: '($CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH=~ /^release*$/) && $TARGETTASKNAME == "manual-release"'      
+    - if: '($CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH =~ /^(release)\/[a-z0-9.]+$/) && $TARGETTASKNAME == "manual-release"'      
       when: manual        
 
 # This rule is designed for merge requests to trigger off the Validation stages
